@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ClassExample092</title>
+</head>
+ <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+ 
+<body>
+<h1> Web Application FeedBack Survey</h1>
+<h2>Survey ParticipantInfo</h2>
+
+<p>Please type the first Name and Last Name</p>
+<form action="/surveyInitialization"  method="Get">
+<p> FirstName: <input type="text" name="firstName" /></p>
+<p> LastName: <input type="text" name="lastName" /></p>
+
+
+<p><input type="submit" value="BeginSurvey" /> <br>
+
+<p> <a href="/index" > Cancel</a></p>
+</form>
+ </body>
+ </html>

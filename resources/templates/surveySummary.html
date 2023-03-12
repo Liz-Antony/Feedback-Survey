@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset ="UTF-8">
+<title>Class 09-2 Example</title>
+</head>
+ <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+ 
+<body>
+<h1>Web Application Feedback Survey</h1> <br>
+<h2> Participant Information </h2>
+<p th:text =" ${session.participant.toString()}" />
+<h2>Questions and Responses</h2>
+<p th:text= " 'Question:' + ${session.q1.getQuestion()} " />
+<p th:text= " 'Response: ' + ${session.q1.getResponse()}" />
+<p th:text= "'Question: ' + ${session.q2.getQuestion()}" />
+<p th:text=" 'Response: ' + ${session.q2.getResponse()}" />
+<br>
+<a href="/index"> Take Feedback Survey </a>
+</body>
+
+</html>
